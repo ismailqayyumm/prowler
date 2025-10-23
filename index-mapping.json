@@ -1,0 +1,788 @@
+{
+    "prowler-checks-benchmarks": {
+      "mappings": {
+        "properties": {
+          "attributes": {
+            "type": "nested",
+            "properties": {
+              "AdditionalInformation": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "AssessmentStatus": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "AuditProcedure": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "Category": {
+                "type": "text"
+              },
+              "Check_Summary": {
+                "type": "text"
+              },
+              "DefaultValue": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "Description": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "ImpactStatement": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "Objetive_ID": {
+                "type": "keyword"
+              },
+              "Objetive_Name": {
+                "type": "text"
+              },
+              "Profile": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "RationaleStatement": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "References": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "RemediationProcedure": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "Section": {
+                "type": "text"
+              },
+              "Service": {
+                "type": "keyword"
+              },
+              "SubSection": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              }
+            }
+          },
+          "benchmarks": {
+            "properties": {
+              "aws_account_security_onboarding_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "aws_audit_manager_control_tower_guardrails_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "aws_foundational_security_best_practices_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "aws_foundational_technical_review_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "aws_well_architected_framework_reliability_pillar_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "aws_well_architected_framework_security_pillar_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "cis_1_4_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "cis_1_5_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "cis_2_0_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "cis_3_0_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "cis_4_0_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "cis_5_0_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "cisa_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "ens_rd2022_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "fedramp_low_revision_4_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "fedramp_moderate_revision_4_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "ffiec_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "gdpr_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "gxp_21_cfr_part_11_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "gxp_eu_annex_11_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "hipaa_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "iso27001_2013_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "iso27001_2022_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "kisa_isms_p_2023_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "kisa_isms_p_2023_korean_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "mitre_attack_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "nis2_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "nist_800_171_revision_2_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "nist_800_53_revision_4_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "nist_800_53_revision_5_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "nist_csf_1_1_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "pci_3_2_1_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "pci_4_0_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "prowler_threatscore_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "rbi_cyber_security_framework_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "soc2_aws": {
+                "properties": {
+                  "description": {
+                    "type": "text"
+                  },
+                  "exists": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          },
+          "check": {
+            "properties": {
+              "categories": {
+                "type": "keyword"
+              },
+              "depends_on": {
+                "type": "keyword"
+              },
+              "description": {
+                "type": "text"
+              },
+              "id": {
+                "type": "keyword"
+              },
+              "notes": {
+                "type": "text"
+              },
+              "related_to": {
+                "type": "keyword"
+              },
+              "related_url": {
+                "type": "keyword"
+              },
+              "resource_type": {
+                "type": "keyword"
+              },
+              "risk": {
+                "type": "text"
+              },
+              "score": {
+                "type": "float"
+              },
+              "service": {
+                "type": "keyword"
+              },
+              "severity": {
+                "type": "keyword"
+              },
+              "sub_service": {
+                "type": "keyword"
+              },
+              "title": {
+                "type": "text"
+              },
+              "type": {
+                "type": "keyword"
+              }
+            }
+          },
+          "check_id": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "checks": {
+            "type": "keyword"
+          },
+          "created_at": {
+            "type": "date"
+          },
+          "finalized": {
+            "properties": {
+              "main": {
+                "type": "keyword"
+              },
+              "main_category": {
+                "type": "keyword"
+              },
+              "sub": {
+                "type": "keyword"
+              },
+              "sub_category": {
+                "type": "keyword"
+              }
+            }
+          },
+          "framework": {
+            "type": "keyword"
+          },
+          "framework_name": {
+            "type": "text"
+          },
+          "framework_version": {
+            "type": "keyword"
+          },
+          "llm": {
+            "properties": {
+              "analysis_timestamp": {
+                "type": "date"
+              },
+              "mitre_analysis": {
+                "properties": {
+                  "confidence": {
+                    "type": "integer"
+                  },
+                  "reason": {
+                    "type": "text"
+                  },
+                  "tactics": {
+                    "type": "keyword"
+                  },
+                  "technique_id": {
+                    "type": "keyword"
+                  },
+                  "technique_name": {
+                    "type": "text"
+                  }
+                }
+              },
+              "model_used": {
+                "type": "keyword"
+              },
+              "overall_confidence": {
+                "type": "integer"
+              },
+              "risk_analysis": {
+                "properties": {
+                  "business_impact": {
+                    "type": "text"
+                  },
+                  "categorization_confidence": {
+                    "type": "integer"
+                  },
+                  "categorization_reason": {
+                    "type": "text"
+                  },
+                  "main_category": {
+                    "type": "keyword"
+                  },
+                  "sub_categories": {
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          },
+          "main_category": {
+            "type": "keyword"
+          },
+          "module": {
+            "type": "keyword"
+          },
+          "provider": {
+            "type": "keyword"
+          },
+          "remediation": {
+            "properties": {
+              "cli": {
+                "type": "text"
+              },
+              "cloudformation": {
+                "type": "text"
+              },
+              "other": {
+                "type": "text"
+              },
+              "recommendation_text": {
+                "type": "text"
+              },
+              "recommendation_url": {
+                "type": "keyword"
+              },
+              "terraform": {
+                "type": "text"
+              }
+            }
+          },
+          "requirement_description": {
+            "type": "text"
+          },
+          "requirement_id": {
+            "type": "keyword"
+          },
+          "requirement_name": {
+            "type": "text"
+          },
+          "sub_categories": {
+            "type": "keyword"
+          },
+          "updated_at": {
+            "type": "date"
+          }
+        }
+      }
+    }
+  }
