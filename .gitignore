@@ -65,6 +65,19 @@ ui/.env*
 api/.env*
 mcp_server/.env*
 .env.local
+.env
+
+# Log files
+*.log
+secure/**/*.log
+
+# Temporary data files
+secure/**/outputs/
+secure/**/data/*.json
+secure/**/data/*.txt
+secure/**/results/*.json
+secure/**/__pycache__/
+secure/**/venv/
 
 # Coverage
 .coverage*
