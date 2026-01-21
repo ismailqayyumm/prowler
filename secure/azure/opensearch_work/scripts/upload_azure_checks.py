@@ -385,7 +385,8 @@ class AzureChecksUploader:
             doc['llm'] = llm_obj
 
         # Add timestamps - always use current timestamp for created_at and updated_at
-        current_timestamp = datetime.now().isoformat()
+        # Use UTC with 'Z' suffix for proper OpenSearch date field indexing
+        current_timestamp = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z'
         doc['created_at'] = current_timestamp
         doc['updated_at'] = current_timestamp
 
