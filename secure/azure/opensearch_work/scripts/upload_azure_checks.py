@@ -299,9 +299,8 @@ class AzureChecksUploader:
             has_mitre_data = True
 
         if has_value('mitre_tactic'):
-            # Convert to array - tactics is a keyword array in mapping
-            tactic = str(row['mitre_tactic']).strip()
-            mitre_analysis['tactics'] = [tactic]
+            # Store as single string value
+            mitre_analysis['tactics'] = str(row['mitre_tactic']).strip()
             has_mitre_data = True
 
         # Confidence and reason for MITRE analysis
@@ -326,9 +325,8 @@ class AzureChecksUploader:
             has_risk_data = True
 
         if has_value('risk_sub_category'):
-            # Convert to array - sub_categories is a keyword array in mapping
-            sub_cat = str(row['risk_sub_category']).strip()
-            risk_analysis['sub_categories'] = [sub_cat]
+            # Store as single string value
+            risk_analysis['sub_categories'] = str(row['risk_sub_category']).strip()
             has_risk_data = True
 
         # Confidence and reason for risk analysis
