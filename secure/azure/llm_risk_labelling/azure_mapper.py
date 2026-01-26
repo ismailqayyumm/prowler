@@ -12,6 +12,11 @@ import sys
 import os
 from pathlib import Path
 
+# Add shared path to import shared modules
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'shared'))
+
 # Load environment variables from .env if available
 try:
     from load_env import load_env_file
@@ -20,7 +25,7 @@ except ImportError:
     pass
 
 from claude_client import call_claude
-from azure_prompts import build_user_prompt
+from prompts import build_user_prompt
 
 BATCH_SIZE = 10
 
