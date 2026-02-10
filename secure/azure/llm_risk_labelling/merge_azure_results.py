@@ -21,11 +21,11 @@ def load_mitre_techniques():
     """Load MITRE techniques reference to get technique names."""
     # Load from shared location
     techniques_file = Path(__file__).parent.parent.parent / "shared" / "techniques_extracted_parents_only.json"
-    
+
     if not techniques_file.exists():
         print(f"⚠️  Warning: MITRE techniques file not found at {techniques_file}")
         return {}
-    
+
     try:
         with open(techniques_file, 'r') as f:
             data = json.load(f)

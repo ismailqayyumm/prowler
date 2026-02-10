@@ -106,10 +106,10 @@ def check_credentials():
 def load_taxonomy():
     """Load taxonomy from shared location."""
     taxonomy_path = Path(__file__).parent.parent.parent / "shared" / "taxonomy.json"
-    
+
     if not taxonomy_path.exists():
         raise FileNotFoundError(f"Taxonomy file not found: {taxonomy_path}")
-    
+
     with open(taxonomy_path, 'r') as f:
         taxonomy = json.load(f)
     print(f"✓ Loaded taxonomy from {taxonomy_path}")
